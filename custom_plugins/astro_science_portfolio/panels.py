@@ -336,6 +336,13 @@ DATASETS: Tuple[Dict[str, Any], ...] = (
     },
 )
 
+    {
+        "key": "exoplanets",
+        "label": "Exoplanets (NASA Archive)",
+        "rows": 6451,
+        "path": Path("/home/dawe/Projects/astro-science/research/projects/exoplanets/data/processed/exoplanets.csv"),
+        "note": "Confirmed exoplanets, 6451 rows | coords+mag | 22 cols",
+    },
 DATASET_BY_KEY = {item["key"]: item for item in DATASETS}
 DATASET_BY_LABEL = {item["label"]: item["key"] for item in DATASETS}
 
