@@ -746,6 +746,19 @@ def create_default_layout(
     except Exception as exc:
         print("[create_default_layout] could not add panel catalogue:", exc)
 
+    # Auto-open the astro-science portfolio panels so the workspace is populated.
+    for _pid in (
+        "astro.science.portfolio.overview",
+        "astro.science.portfolio.catalogs",
+        "astro.science.portfolio.figures",
+        "astro.science.portfolio.research",
+        "astro.science.portfolio.pipeline",
+    ):
+        try:
+            context.plugins.open_panel(_pid, context=context)
+        except Exception as exc:
+            print("[create_default_layout] could not open", _pid, ":", exc)
+
     _publish(
         context,
         "workspace.default.created",
