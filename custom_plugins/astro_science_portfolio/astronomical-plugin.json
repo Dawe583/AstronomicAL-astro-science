@@ -1,0 +1,13 @@
+{
+  "id": "astro.science.portfolio",
+  "name": "Astro Science Portfolio",
+  "version": "0.1.0",
+  "description": "Read-only research portfolio panels for the astro-science workspace: overview, catalogues, figures, research index and pipeline status.",
+  "author": "astro-science",
+  "capabilities": ["panel"],
+  "tags": ["astro", "portfolio", "research"],
+  "requires": [],
+  "optional_requires": [],
+  "requires_plugins": [],
+  "optional_plugins": []
+}
